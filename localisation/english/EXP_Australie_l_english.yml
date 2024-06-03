@@ -1,0 +1,45 @@
+﻿l_english:
+ #FOCUS
+ FST_take_states:0 "Intervene in Imperial Civil War"
+ FST_take_states_desc:0 "While Britain is busy fighting their war against America we can take Victoria \n\nHopefully this won't lead to any §RBad§! consequenses"
+ FST_take_states_tooltip:0 "You'll have 200 days to take §RFitzroy§!, §RSydney§! and §LKlemzig§!." 
+
+ FST_goida:0 "§3Nouvelle Australie§!"
+ FST_goida_desc:0 ""
+ FST_goida_tooltip:0 "We managed to reunite §3Australie§! in her formal glory!"
+
+ FST_bruh:0 "§RFailed State...§!"
+ FST_bruh_desc:0 "If we can't take back our colonies, how are we supposed to return to the Europe?"
+ FST_bruh_tooltip:0 "§RThere's nothing we can do...§!"  
+
+ #CATEGORIES.DECISIONS
+ 
+ #FLAGS
+ FST_Fucking_Loser:0 "§RFailure of Blitz§!"
+ FST_Victory:0 "§7Succesfully reached Australie shores§!"
+
+ #COSMETIC
+  FST_GER_ni:0 "German Ostland"
+  FST_GER_ni_DEF:0 "the German Authority in Australie"
+  FST_GER_ds:0 "German Ostland"
+  FST_GER_ds_DEF:0 "the German Authority in Australie"
+  FST_GER_rc:0 "German Ostland"
+  FST_GER_rc_DEF:0 "the German Authority in Australie"
+  FST_GER_an:0 "German Ostland"
+  FST_GER_an_DEF:0 "the German Authority in Australie"
+  FST_GER_cn:0 "German Ostland"
+  FST_GER_cn_DEF:0 "the German Authority in Australie"
+  FST_GER_lb:0 "German Ostland"
+  FST_GER_lb_DEF:0 "the German Authority in Australie"
+  FST_GER_ss:0 "German Ostland"
+  FST_GER_ss_DEF:0 "the German Authority in Australie"
+  FST_GER_jc:0 "German Ostland"
+  FST_GER_jc_DEF:0 "Ostlandien"
+  FST_GER_ni_ADJ:0 "Ostlandien"
+  FST_GER_rc_ADJ:0 "Ostlandien"
+  FST_GER_lb_ADJ:0 "Ostlandien"
+  FST_GER_ss_ADJ:0 "Ostlandien"
+  FST_GER_jc_ADJ:0 "Ostlandien"
+  FST_GER_ds_ADJ:0 "Ostlandien"
+  FST_GER_cn_ADJ:0 "Ostlandien"
+  FST_GER_an_ADJ:0 "Ostlandien"

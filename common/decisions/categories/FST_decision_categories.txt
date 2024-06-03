@@ -1,0 +1,31 @@
+FST_ICW = {
+	priority = 111111
+	icon = icon
+
+	allowed = {
+		has_completed_focus = FST_take_states
+	}
+	visible = {
+		has_completed_focus = FST_take_states
+	}
+}
+
+FST_MARKET = {
+	priority = 111112
+	icon = icon
+
+	allowed = {
+		always = yes
+	}
+	visible = {
+	}
+}
+
+FST_debug = {
+	priority = 111110
+	icon = icon
+
+	visible = {
+		is_debug = yes
+	}
+}

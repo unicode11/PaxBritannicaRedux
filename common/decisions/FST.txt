@@ -1,0 +1,350 @@
+FST_ICW = {
+	FST_ICW_gonuts = {
+		icon = icon
+		days_mission_timeout = 200
+		is_good = yes
+
+
+
+		available = {
+			FST = {
+				controls_province = 10475
+				controls_province = 12406
+				controls_province = 12910
+			}
+		}
+		fire_only_once = yes
+		visible = {
+			ROOT = {
+				has_completed_focus = FST_take_states
+			}
+		}
+
+		cost = 10
+
+		complete_effect = {
+			set_country_flag = FTS_Victory
+			country_event = FTS_Victory_take
+		}
+		timeout_effect = {
+			set_country_flag = FST_Fucking_Loser
+			country_event = FTS_Lost
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+
+FST_MARKET = {
+	FST_MARKET_factories = {
+		
+	}
+}
+
+FST_debug = {
+	FST_pre_ICW = {
+		icon = icon
+
+		available = {
+			always = yes
+		}
+		fire_only_once = no
+		visible = {
+		}
+
+		cost = 0
+
+		complete_effect = {
+			DAS = {
+				transfer_state = 791
+				transfer_state = 518
+			}
+			VIC = {
+				transfer_state = 285
+				transfer_state = 789
+				transfer_state = 883
+				transfer_state = 882
+				transfer_state = 521
+				transfer_state = 72
+
+			}
+			release = NZL
+			drop_cosmetic_tag = yes
+			set_politics = {
+				ruling_party = cn
+			}
+			GER = {
+				end_puppet = FST
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+	}
+	FST_ICW_defeat = {
+		icon = icon
+
+		available = {
+			always = yes
+		}
+		fire_only_once = no
+		visible = {
+		}
+
+		cost = 0
+
+		complete_effect = {
+			FST = {
+				transfer_state = 791
+				transfer_state = 518
+				transfer_state = 826
+			}
+			GER = {
+				set_autonomy = {
+					target = FST
+					autonomous_state = autonomy_PB_Autonomous_Colony
+					freedom_level = 0.5
+				}
+			}
+			set_cosmetic_tag = FST_GER
+			set_politics = {
+				ruling_party = an
+				elections_allowed = no
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+	}
+
+	FST_ICW_win_minor = {
+		icon = icon
+
+		available = {
+			always = yes
+		}
+		fire_only_once = no
+		visible = {
+		}
+
+		cost = 0
+
+		complete_effect = {
+			285 = {
+				transfer_state_to = FST
+				add_core_of = FST
+				
+			}
+			789 = {
+				transfer_state_to = FST
+				add_core_of = FST
+				
+			}
+			791 = {
+				transfer_state_to = FST
+				add_core_of = FST
+				remove_core_of = DAS
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	FST_ICW_win_major = {
+		icon = icon
+
+		available = {
+			always = yes
+		}
+		fire_only_once = no
+		visible = {
+		}
+
+		cost = 0
+
+		complete_effect = {
+			285 = {
+				transfer_state_to = FST
+				add_core_of = FST
+				
+			}
+			789 = {
+				transfer_state_to = FST
+				add_core_of = FST
+				
+			}
+			791 = {
+				transfer_state_to = FST
+				add_core_of = FST
+				remove_core_of = DAS
+			}
+			521 = {
+				transfer_state_to = FST
+				add_core_of = FST
+				
+			}
+			883 = {
+				transfer_state_to = FST
+				add_core_of = FST
+				
+			}
+			882 = {
+				transfer_state_to = FST
+				add_core_of = FST
+				
+			}
+			72 = {
+				transfer_state_to = FST
+				add_core_of = FST
+				
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	FST_ICW_win_major = {
+		icon = icon
+
+		available = {
+			always = yes
+		}
+		fire_only_once = no
+		visible = {
+		}
+
+		cost = 0
+
+		complete_effect = {
+			285 = {
+				transfer_state_to = FST
+				add_core_of = FST
+				
+			}
+			789 = {
+				transfer_state_to = FST
+				add_core_of = FST
+				
+			}
+			791 = {
+				transfer_state_to = FST
+				add_core_of = FST
+				remove_core_of = DAS
+			}
+			521 = {
+				transfer_state_to = FST
+				add_core_of = FST
+				
+			}
+			883 = {
+				transfer_state_to = FST
+				add_core_of = FST
+				
+			}
+			882 = {
+				transfer_state_to = FST
+				add_core_of = FST
+				
+			}
+			72 = {
+				transfer_state_to = FST
+				add_core_of = FST
+				
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	FST_ICW_win_total = {
+		icon = icon
+
+		available = {
+			always = yes
+		}
+		fire_only_once = no
+		visible = {
+		}
+
+		cost = 0
+
+		complete_effect = {
+			285 = {
+				transfer_state_to = FST
+				add_core_of = FST
+			}
+			789 = {
+				transfer_state_to = FST
+				add_core_of = FST
+			}
+			791 = {
+				transfer_state_to = FST
+				add_core_of = FST
+			}
+			521 = {
+				transfer_state_to = FST
+				add_core_of = FST
+				
+			}
+			883 = {
+				transfer_state_to = FST
+				add_core_of = FST
+				
+			}
+			882 = {
+				transfer_state_to = FST
+				add_core_of = FST
+				
+			}
+			72 = {
+				transfer_state_to = FST
+				add_core_of = FST
+				
+			}
+			523 = {
+				transfer_state_to = FST
+				add_core_of = FST
+				
+			}
+			635 = {
+				transfer_state_to = FST
+				add_core_of = FST
+				
+			}
+			634 = {
+				transfer_state_to = FST
+				add_core_of = FST
+			}
+			523 = {
+				transfer_state_to = FST
+				add_core_of = FST
+			}
+			636 = {
+				transfer_state_to = FST
+				add_core_of = FST
+			}
+			734 = {
+				transfer_state_to = FST
+				add_core_of = FST
+			}
+			annex_country = {
+				target = NZL
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+

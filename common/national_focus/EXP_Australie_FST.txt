@@ -1,0 +1,748 @@
+focus_tree = {
+	id = pre_french_australie_focus
+	
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = FST
+		}
+
+	}
+
+	default = no
+	continuous_focus_position = { x = 100 y = 3500 }
+
+	
+	focus = {
+		id = FST_take_port
+		icon = icon_goes_here
+		cost = 10
+		
+		x = 0
+		y = 0
+		
+		allow_branch = {}
+		mutually_exclusive = {}
+		ai_will_do = {}
+		
+		available = {}
+		completion_reward = {
+			country_event = FST_take_port_event
+			826 = {
+				transfer_state_to = ROOT
+				remove_core_of = DAS
+			}
+		}
+		bypass = {}
+	}
+
+	focus = {
+		id = FST_remilitarize_port
+		icon = icon_goes_here
+		cost = 10
+		
+		x = 0
+		y = 1
+		relative_position_id = FST_take_port
+		
+		allow_branch = {}
+		mutually_exclusive = {}
+		ai_will_do = {}
+		prerequisite = {focus = FST_take_port}
+		
+		available = {}
+		completion_reward = {
+			custom_effect_tooltip = FST_market_access
+		}
+		bypass = {}
+	}
+
+	focus = {
+		id = FST_industry_buildup
+		icon = icon_goes_here
+		cost = 10
+		
+		x = 5
+		y = 1
+		relative_position_id = FST_remilitarize_port
+		
+		allow_branch = {}
+		mutually_exclusive = {}
+		ai_will_do = {}
+		prerequisite = { focus = FST_remilitarize_port }
+		
+		available = {
+		
+		}
+		completion_reward = {}
+		bypass = {}
+	}
+
+	focus = {
+		id = FST_arms_factories
+		icon = icon_goes_here
+		cost = 10
+		
+		x = -1
+		y = 1
+		relative_position_id = FST_industry_buildup
+		
+		allow_branch = {}
+		mutually_exclusive = {}
+		ai_will_do = {}
+		prerequisite = {focus = FST_industry_buildup}
+		
+		available = {
+			
+		}
+		completion_reward = {}
+		bypass = {}
+	}
+
+	focus = {
+		id = FST_arms_factories_2
+		icon = icon_goes_here
+		cost = 10
+		
+		x = 0
+		y = 1
+		relative_position_id = FST_arms_factories
+		
+		allow_branch = {}
+		mutually_exclusive = {}
+		ai_will_do = {}
+		prerequisite = { focus = FST_arms_factories }
+		
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		bypass = {}
+	}
+
+	focus = {
+		id = FST_arms_factories_3
+		icon = icon_goes_here
+		cost = 10
+		
+		x = 0
+		y = 1
+		relative_position_id = FST_arms_factories_2
+		
+		allow_branch = {}
+		mutually_exclusive = {}
+		ai_will_do = {}
+		prerequisite = { focus = FST_arms_factories_2 }
+		
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		bypass = {}
+	}
+
+	focus = {
+		id = FST_civ_factories
+		icon = icon_goes_here
+		cost = 10
+		
+		x = 1
+		y = 1
+		relative_position_id = FST_industry_buildup
+		
+		allow_branch = {}
+		mutually_exclusive = {}
+		ai_will_do = {}
+		prerequisite = {focus = FST_industry_buildup}
+		
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		bypass = {}
+	}
+
+	focus = {
+		id = FST_civ_factories_2
+		icon = icon_goes_here
+		cost = 10
+		
+		x = 0
+		y = 1
+		relative_position_id = FST_civ_factories
+		
+		allow_branch = {}
+		mutually_exclusive = {}
+		ai_will_do = {}
+		prerequisite = { focus = FST_civ_factories }
+		
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		bypass = {}
+	}
+
+	focus = {
+		id = FST_civ_factories_3
+		icon = icon_goes_here
+		cost = 10
+		
+		x = 0
+		y = 1
+		relative_position_id = FST_civ_factories_2
+		
+		allow_branch = {}
+		mutually_exclusive = {}
+		ai_will_do = {}
+		prerequisite = { focus = FST_civ_factories_2 }
+		
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		bypass = {}
+	}
+
+	focus = {
+		id = FST_industry_done
+		icon = icon_goes_here
+		cost = 10
+		
+		x = -1
+		y = 1
+		relative_position_id = FST_arms_factories_3
+		relative_position_id = FST_civ_factories_3
+		
+		allow_branch = {}
+		mutually_exclusive = {}
+		ai_will_do = {}
+		prerequisite = { 
+			focus = FST_civ_factories_3
+		}
+		prerequisite = { 
+			focus = FST_arms_factories_3 
+		}
+		
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		bypass = {}
+	}
+
+	focus = {
+		id = FST_army_buildup
+		icon = icon_goes_here
+		cost = 10
+		
+		x = 10
+		y = 1
+		relative_position_id = FST_remilitarize_port
+		
+		allow_branch = {}
+		mutually_exclusive = {}
+		ai_will_do = {}
+		prerequisite = {focus = FST_remilitarize_port}
+		
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		bypass = {}
+	}
+
+	focus = {
+		id = FST_air_1
+		icon = icon_goes_here
+		cost = 10
+		
+		x = -2
+		y = 1
+		relative_position_id = FST_army_buildup
+		
+		allow_branch = {}
+		mutually_exclusive = {}
+		ai_will_do = {}
+		prerequisite = { focus = FST_army_buildup }
+		
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		bypass = {}
+	}
+
+	focus = {
+		id = FST_air_2
+		icon = icon_goes_here
+		cost = 10
+		
+		x = 0
+		y = 1
+		relative_position_id = FST_air_1
+		
+		allow_branch = {}
+		mutually_exclusive = {}
+		ai_will_do = {}
+		prerequisite = { focus = FST_air_1 }
+		
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		bypass = {}
+	}
+
+	focus = {
+		id = FST_air_final
+		icon = icon_goes_here
+		cost = 10
+		
+		x = 0
+		y = 1
+		relative_position_id = FST_air_2
+		
+		allow_branch = {}
+		mutually_exclusive = {}
+		ai_will_do = {}
+		prerequisite = { focus = FST_air_2 }
+		
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		bypass = {}
+	}
+
+	focus = {
+		id = FST_ground_1
+		icon = icon_goes_here
+		cost = 10
+		
+		x = 0
+		y = 1
+		relative_position_id = FST_army_buildup
+		
+		allow_branch = {}
+		mutually_exclusive = {}
+		ai_will_do = {}
+		prerequisite = { focus = FST_army_buildup }
+		
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		bypass = {}
+	}
+
+	focus = {
+		id = FST_ground_2
+		icon = icon_goes_here
+		cost = 10
+		
+		x = 0
+		y = 1
+		relative_position_id = FST_ground_1
+		
+		allow_branch = {}
+		mutually_exclusive = {}
+		ai_will_do = {}
+		prerequisite = { focus = FST_ground_1 }
+		
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		bypass = {}
+	}
+
+	focus = {
+		id = FST_ground_final
+		icon = icon_goes_here
+		cost = 10
+		
+		x = 0
+		y = 1
+		relative_position_id = FST_ground_2
+		
+		allow_branch = {}
+		mutually_exclusive = {}
+		ai_will_do = {}
+		prerequisite = { focus = FST_ground_2 }
+		
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		bypass = {}
+	}
+
+	focus = {
+		id = FST_naval_1
+		icon = icon_goes_here
+		cost = 10
+		
+		x = 2
+		y = 1
+		relative_position_id = FST_army_buildup
+		
+		allow_branch = {}
+		mutually_exclusive = {}
+		ai_will_do = {}
+		prerequisite = { focus = FST_army_buildup }
+		
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		bypass = {}
+	}
+
+	focus = {
+		id = FST_naval_2
+		icon = icon_goes_here
+		cost = 10
+		
+		x = 0
+		y = 1
+		relative_position_id = FST_naval_1
+		
+		allow_branch = {}
+		mutually_exclusive = {}
+		ai_will_do = {}
+		prerequisite = { focus = FST_naval_1 }
+		
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		bypass = {}
+	}
+
+	focus = {
+		id = FST_naval_final
+		icon = icon_goes_here
+		cost = 10
+		
+		x = 0
+		y = 1
+		relative_position_id = FST_naval_2
+		
+		allow_branch = {}
+		mutually_exclusive = {}
+		ai_will_do = {}
+		prerequisite = { focus = FST_naval_2 }
+		
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		bypass = {}
+	}
+
+	focus = {
+		id = FST_grandest_army
+		icon = icon_goes_here
+		cost = 10
+		
+		x = -2
+		y = 1
+		relative_position_id = FST_air_final
+		relative_position_id = FST_ground_final
+		relative_position_id = FST_naval_final
+		
+		allow_branch = {}
+		mutually_exclusive = {}
+		ai_will_do = {}
+		prerequisite = { focus = FST_air_final }
+		prerequisite = { focus = FST_ground_final }
+		prerequisite = { focus = FST_naval_final }
+		
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		bypass = {}
+	}
+
+	focus = {
+		id = FST_market_research
+		icon = icon_goes_here
+		cost = 10
+		
+		x = 0
+		y = 1
+		relative_position_id = FST_remilitarize_port
+		
+		allow_branch = {}
+		mutually_exclusive = {}
+		ai_will_do = {}
+		prerequisite = { focus = FST_remilitarize_port }
+		
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		bypass = {}
+	}
+
+
+	focus = {
+		id = FST_take_states
+		icon = icon
+		cost = 10
+		x = 3
+		y = 5
+		relative_position_id = FST_grandest_army
+		relative_position_id = FST_industry_done
+		relative_position_id = FST_market_research
+		prerequisite = { focus = FST_grandest_army }
+		prerequisite = { focus = FST_industry_done }
+		prerequisite = { focus = FST_market_research }
+		available = {
+			OR = {
+				AME = {
+					has_war_with = ENG
+				}
+				date > 1937.06.01
+			}
+		}
+		bypass = {}
+		allow_branch = {}
+		ai_will_do = {
+			
+		}
+	
+		completion_reward = {
+			custom_effect_tooltip = FST_take_states_tooltip
+			hidden_effect = {
+				declare_war_on = {
+					target = DAS
+				}
+				declare_war_on = {
+					target = VIC
+				}
+			}
+
+		}
+
+	}
+	focus = {
+		id = FST_goida
+		icon = icon_goes_here
+		cost = 10
+		x = 1
+		y = 1
+		available = {
+			has_country_flag = FST_Victory
+		}
+		bypass = {}
+		allow_branch = {}
+		prerequisite = {
+			focus = FST_take_states
+		}
+		mutually_exclusive = {
+			focus = FST_bruh
+		}
+		relative_position_id = FST_take_states
+		ai_will_do = {
+			
+		}
+	
+		completion_reward = {
+			custom_effect_tooltip = FST_goida_tooltip
+			country_event = FST_new_australie
+			load_focus_tree = french_australie_focus
+		}
+	}
+	focus = {
+		id = FST_bruh
+		icon = icon_goes_here
+		cost = 10
+		x = -1
+		y = 1
+		available = { 
+			has_country_flag = FST_Fucking_Loser
+		}
+		bypass = {}
+		allow_branch = {}
+		prerequisite = {
+			focus = FST_take_states
+		}
+		mutually_exclusive = {
+			focus = FST_goida
+		}
+		relative_position_id = FST_take_states
+		ai_will_do = {
+			
+		}
+	
+		completion_reward = {
+			custom_effect_tooltip = FST_bruh_tooltip
+			country_event = FST_dead
+			load_focus_tree = german_australie_focus
+		}
+	}
+}
+
+focus_tree = {
+	id = german_australie_focus
+	country = { 
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = FST
+		}
+	}
+
+	default = no
+	continuous_focus_position = { x = 100 y = 3500 }
+
+	focus = {
+		id = FST_GER_intro
+		icon = icon_goes_here
+		cost = 10
+		
+		x = 0
+		y = 1
+		
+		allow_branch = {}
+		mutually_exclusive = {}
+		ai_will_do = {}
+		
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		bypass = {}
+	}
+
+}
+
+focus_tree = {
+	id = french_australie_focus
+	
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = FST
+		}
+
+	}
+
+	default = no
+	continuous_focus_position = { x = 100 y = 3500 }
+
+
+	focus = {
+		id = FST_rapid_remil
+		icon = icon_goes_here
+		cost = 10
+		
+		x = 0
+		y = 1
+		
+		allow_branch = {}
+		mutually_exclusive = {}
+		ai_will_do = {}
+		
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		bypass = {}
+	}
+
+	focus = {
+		id = FST_naval_rem
+		icon = icon_goes_here
+		cost = 10
+		
+		x = 0
+		y = 1
+		relative_position_id = FST_rapid_remil
+		
+		allow_branch = {}
+		mutually_exclusive = {}
+		ai_will_do = {}
+		prerequisite = { focus = FST_rapid_remil }
+		
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		bypass = {}
+	}
+
+	focus = {
+		id = FST_fuck_holland
+		icon = icon_goes_here
+		cost = 10
+		
+		x = 0
+		y = 1
+		relative_position_id = FST_naval_rem
+		
+		allow_branch = {}
+		mutually_exclusive = {}
+		ai_will_do = {}
+		prerequisite = { focus = FST_naval_rem }
+		
+		available = {
+			
+		}
+		completion_reward = {
+			custom_effect_tooltip = FST_fuck_holland_tooltip	
+		}
+		bypass = {}
+	}
+
+}
