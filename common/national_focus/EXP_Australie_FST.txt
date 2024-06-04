@@ -525,6 +525,79 @@ focus_tree = {
 		bypass = {}
 	}
 
+	focus = {
+		id = FST_market_access_RUS
+		icon = icon_goes_here
+		cost = 10
+		
+		x = 0
+		y = 1
+		relative_position_id = FST_market_research
+		
+		allow_branch = {}
+		mutually_exclusive = { focus = FST_market_access_GER }
+		mutually_exclusive = { focus = FST_market_access_ENG }
+		ai_will_do = {}
+		prerequisite = { focus = FST_market_research }
+		
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		bypass = {}
+	}
+	focus = {
+		id = FST_market_access_GER
+		icon = icon_goes_here
+		cost = 10
+		
+		x = 2
+		y = 1
+		relative_position_id = FST_market_research
+		
+		allow_branch = {}
+		mutually_exclusive = { focus = FST_market_access_RUS }
+		mutually_exclusive = { focus = FST_market_access_ENG }
+		ai_will_do = {}
+		prerequisite = { focus = FST_market_research }
+		
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		bypass = {}
+	}
+
+	focus = {
+		id = FST_market_access_ENG
+		icon = icon_goes_here
+		cost = 10
+		
+		x = -2
+		y = 1
+		relative_position_id = FST_market_research
+		
+		allow_branch = {}
+		mutually_exclusive = { focus = FST_market_access_GER }
+		mutually_exclusive = { focus = FST_market_access_RUS }
+
+		ai_will_do = {}
+		prerequisite = { focus = FST_market_research }
+		
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		bypass = {}
+	}
+
+
 
 	focus = {
 		id = FST_take_states
@@ -741,6 +814,29 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = FST_fuck_holland_tooltip	
+		}
+		bypass = {}
+	}
+
+	focus = {
+		id = FST_desert_industry
+		icon = icon_goes_here
+		cost = 10
+		
+		x = 0
+		y = 1
+		relative_position_id = FST_fuck_holland
+		
+		allow_branch = {}
+		mutually_exclusive = {}
+		ai_will_do = {}
+		prerequisite = { focus = FST_fuck_holland }
+		
+		available = {
+			
+		}
+		completion_reward = {
+			
 		}
 		bypass = {}
 	}

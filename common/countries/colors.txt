@@ -1873,3 +1873,29 @@ TFH = {
 	color = rgb { 176 170 74 }
 	color_ui = rgb { 176 170 74 }
 }
+
+FSV = {
+	color = rgb { 67 80 84 }
+	color_ui = rgb { 67 80 84 }
+}
+
+FSB = {
+	color = rgb { 67 80 84 }
+	color_ui = rgb { 67 80 84 }
+}
+
+FSC = {
+	color = rgb { 67 80 84 }
+	color_ui = rgb { 67 80 84 }
+}
+
+FSD = {
+	color = rgb { 67 80 84 }
+	color_ui = rgb { 67 80 84 }
+}
+
+FSZ = {
+	color = rgb { 67 80 84 }
+	color_ui = rgb { 67 80 84 }
+}
+

@@ -266,7 +266,8 @@ FST_debug = {
 			factor = 0
 		}
 	}
-	FST_ICW_win_total = {
+
+	FST_load_german = {
 		icon = icon
 
 		available = {
@@ -279,72 +280,161 @@ FST_debug = {
 		cost = 0
 
 		complete_effect = {
-			285 = {
-				transfer_state_to = FST
-				add_core_of = FST
-			}
-			789 = {
-				transfer_state_to = FST
-				add_core_of = FST
-			}
-			791 = {
-				transfer_state_to = FST
-				add_core_of = FST
-			}
-			521 = {
-				transfer_state_to = FST
-				add_core_of = FST
-				
-			}
-			883 = {
-				transfer_state_to = FST
-				add_core_of = FST
-				
-			}
-			882 = {
-				transfer_state_to = FST
-				add_core_of = FST
-				
-			}
-			72 = {
-				transfer_state_to = FST
-				add_core_of = FST
-				
-			}
-			523 = {
-				transfer_state_to = FST
-				add_core_of = FST
-				
-			}
-			635 = {
-				transfer_state_to = FST
-				add_core_of = FST
-				
-			}
-			634 = {
-				transfer_state_to = FST
-				add_core_of = FST
-			}
-			523 = {
-				transfer_state_to = FST
-				add_core_of = FST
-			}
-			636 = {
-				transfer_state_to = FST
-				add_core_of = FST
-			}
-			734 = {
-				transfer_state_to = FST
-				add_core_of = FST
-			}
-			annex_country = {
-				target = NZL
-			}
+			load_focus_tree = german_australie_focus
 		}
 
 		ai_will_do = {
 			factor = 0
 		}
 	}
+
+	FST_load_pre = {
+		icon = icon
+
+		available = {
+			always = yes
+		}
+		fire_only_once = no
+		visible = {
+		}
+
+		cost = 0
+
+		complete_effect = {
+			load_focus_tree = pre_french_australie_focus
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	FST_load_french = {
+		icon = icon
+
+		available = {
+			always = yes
+		}
+		fire_only_once = no
+		visible = {
+		}
+
+		cost = 0
+
+		complete_effect = {
+			load_focus_tree = french_australie_focus
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	FST_FH_win = {
+		icon = icon
+
+		available = {
+			always = yes
+		}
+		fire_only_once = no
+		visible = {
+		}
+
+		cost = 0
+
+		complete_effect = {
+			520 = {
+				transfer_state_to = FST
+				add_core_of = FST
+			}
+			522 = {
+				transfer_state_to = FST
+				add_core_of = FST
+			}
+			520 = {
+				transfer_state_to = FST
+				add_core_of = FST
+			}
+			519 = {
+				transfer_state_to = FST
+				add_core_of = FST
+			}
+			520 = {
+				transfer_state_to = FST
+				add_core_of = FST
+			}
+
+			
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	FST_split_natives = {
+		icon = icon
+
+		available = {
+			always = yes
+		}
+		fire_only_once = no
+		visible = {
+		}
+
+		cost = 0
+
+		complete_effect = {
+			FSV = {
+				transfer_state = 885
+				transfer_state = 886
+				transfer_state = 887
+				transfer_state = 888
+				transfer_state = 889
+				transfer_state = 890
+				transfer_state = 674
+
+				set_cosmetic_tag = FST_ab_federation
+			}
+
+			FSB = {
+				transfer_state = 884
+
+				set_cosmetic_tag = FST_ab_federation
+			}
+
+			FSC = {
+				transfer_state = 883
+
+				set_cosmetic_tag = FST_ab_federation
+			}
+
+			FSD = {
+				transfer_state = 789
+
+				set_cosmetic_tag = FST_ab_federation
+			}
+
+			FSZ = {
+				transfer_state = 882
+
+				set_cosmetic_tag = FST_ab_federation
+			}
+			
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+
+
+
+
+
+
+	
 }
 

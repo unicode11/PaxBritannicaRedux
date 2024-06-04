@@ -454,5 +454,8 @@ SND = "countries/Scandinavia.txt"
 TFP = "countries/TaskForcePhobos.txt"
 TFD = "countries/TaskForceDeimos.txt"
 TFH = "countries/TaskForceHelios.txt"
-
-
+FSV = "countries/Goldsfields.txt"
+FSB = "countries/Kokatha.txt"
+FSC = "countries/Eyre.txt"
+FSD = "countries/Wiljali.txt"
+FSZ = "countries/Guwa.txt"

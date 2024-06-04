@@ -972,3 +972,13 @@ MIF_Earth_League = {
 	color_ui = rgb { 66 98 153 }
 }
 
+FST_GER = {
+	color = rgb { 61 73 77 }
+	color_ui = rgb { 61 73 77 }
+}
+
+FST_ab_Federation = {
+	color = rgb { 54 104 112 }
+	color_ui = rgb { 54 104 112 }
+}
+
