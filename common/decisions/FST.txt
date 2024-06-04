@@ -393,14 +393,19 @@ FST_debug = {
 				transfer_state = 889
 				transfer_state = 890
 				transfer_state = 674
-
 				set_cosmetic_tag = FST_ab_federation
 			}
-
+			
 			FSB = {
 				transfer_state = 884
 
 				set_cosmetic_tag = FST_ab_federation
+
+				create_faction = FST_natives_federation
+				add_to_faction = FSV
+				add_to_faction = FSC
+				add_to_faction = FSD
+				add_to_faction = FSZ
 			}
 
 			FSC = {
