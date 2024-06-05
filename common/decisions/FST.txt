@@ -386,6 +386,10 @@ FST_debug = {
 
 		complete_effect = {
 			FSV = {
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 				transfer_state = 885
 				transfer_state = 886
 				transfer_state = 887
@@ -400,12 +404,15 @@ FST_debug = {
 				transfer_state = 884
 
 				set_cosmetic_tag = FST_ab_federation
+<<<<<<< Updated upstream
 
 				create_faction = FST_natives_federation
 				add_to_faction = FSV
 				add_to_faction = FSC
 				add_to_faction = FSD
 				add_to_faction = FSZ
+=======
+>>>>>>> Stashed changes
 			}
 
 			FSC = {
@@ -422,8 +429,19 @@ FST_debug = {
 
 			FSZ = {
 				transfer_state = 882
+<<<<<<< Updated upstream
 
 				set_cosmetic_tag = FST_ab_federation
+=======
+				create_faction = FST_natives_federation
+
+				set_cosmetic_tag = FST_ab_federation
+				add_to_faction = FSV
+				add_to_faction = FSC
+				add_to_faction = FSD
+				add_to_faction = FSB
+				add_to_faction = FST
+>>>>>>> Stashed changes
 			}
 			
 		}
@@ -433,6 +451,48 @@ FST_debug = {
 		}
 	}
 
+<<<<<<< Updated upstream
+=======
+	FST_annex_natives = {
+		icon = icon
+
+		available = {
+			always = yes
+		}
+		fire_only_once = no
+		visible = {
+		}
+
+		cost = 0
+
+		complete_effect = {
+			FST = {
+				annex_country = {
+					target = FSB
+				}
+				annex_country = {
+					target = FSV
+				}
+				annex_country = {
+					target = FSZ
+				}
+				annex_country = {
+					target = FSD
+				}
+				annex_country = {
+					target = FSC
+				}
+			}
+			leave_faction = yes
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+>>>>>>> Stashed changes
 
 
 

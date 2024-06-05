@@ -639,6 +639,155 @@ focus_tree = {
 		}
 
 	}
+<<<<<<< Updated upstream
+=======
+
+	focus = {
+		id = FST_blitz_shore
+		icon = icon_goes_here
+		cost = 10
+		
+		x = -2
+		y = 1
+		relative_position_id = FST_take_states
+		
+		allow_branch = {}
+		mutually_exclusive = {}
+		ai_will_do = {}
+		prerequisite = { focus = FST_take_states }
+		
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		bypass = {}
+	}
+
+	focus = {
+		id = FST_deploy_marines
+		icon = icon_goes_here
+		cost = 10
+		
+		x = 2
+		y = 1
+		relative_position_id = FST_take_states
+		
+		allow_branch = {}
+		mutually_exclusive = {}
+		ai_will_do = {}
+		prerequisite = { focus = FST_take_states }
+		
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		bypass = {}
+	}
+
+	focus = {
+		id = FST_not_yet_lost
+		icon = icon_goes_here
+		cost = 10
+		
+		x = 1.5
+		y = 2
+		relative_position_id = FST_take_states
+		
+		allow_branch = {}
+		mutually_exclusive = {}
+		ai_will_do = {}
+		prerequisite = { focus = FST_take_states }
+		
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		bypass = {}
+	}
+
+	focus = {
+		id = FST_one_last_push
+		icon = icon_goes_here
+		cost = 10
+		
+		x = -1.5
+		y = 2
+		relative_position_id = FST_take_states
+		
+		allow_branch = {}
+		mutually_exclusive = {}
+		ai_will_do = {}
+		prerequisite = { focus = FST_take_states }
+		
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		bypass = {}
+	}
+
+	focus = {
+		id = FST_raise_conscript
+		icon = icon_goes_here
+		cost = 10
+		
+		x = 0
+		y = 1
+		relative_position_id = FST_take_states
+		
+		allow_branch = {}
+		mutually_exclusive = {}
+		ai_will_do = {}
+		prerequisite = { focus = FST_take_states }
+		
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		bypass = {}
+	}
+
+	focus = {
+		id = FST_aftermath
+		icon = icon_goes_here
+		cost = 10
+		
+		x = 0
+		y = 3
+		relative_position_id = FST_take_states
+		
+		allow_branch = {}
+		mutually_exclusive = {}
+		ai_will_do = {}
+		prerequisite = { 
+			focus = FST_raise_conscript 
+			focus = FST_not_yet_lost
+			focus = FST_one_last_push
+			focus = FST_blitz_shore
+			focus = FST_deploy_marines
+		}
+		
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		bypass = {}
+	}
+
+
+>>>>>>> Stashed changes
 	focus = {
 		id = FST_goida
 		icon = icon_goes_here
@@ -651,12 +800,20 @@ focus_tree = {
 		bypass = {}
 		allow_branch = {}
 		prerequisite = {
+<<<<<<< Updated upstream
 			focus = FST_take_states
+=======
+			focus = FST_aftermath
+>>>>>>> Stashed changes
 		}
 		mutually_exclusive = {
 			focus = FST_bruh
 		}
+<<<<<<< Updated upstream
 		relative_position_id = FST_take_states
+=======
+		relative_position_id = FST_aftermath
+>>>>>>> Stashed changes
 		ai_will_do = {
 			
 		}
@@ -679,12 +836,20 @@ focus_tree = {
 		bypass = {}
 		allow_branch = {}
 		prerequisite = {
+<<<<<<< Updated upstream
 			focus = FST_take_states
+=======
+			focus = FST_aftermath
+>>>>>>> Stashed changes
 		}
 		mutually_exclusive = {
 			focus = FST_goida
 		}
+<<<<<<< Updated upstream
 		relative_position_id = FST_take_states
+=======
+		relative_position_id = FST_aftermath
+>>>>>>> Stashed changes
 		ai_will_do = {
 			
 		}
